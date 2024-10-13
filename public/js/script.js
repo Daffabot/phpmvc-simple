@@ -35,3 +35,11 @@ $(function() {
         });
     });
 });
+
+// Alpine JS
+document.addEventListener('alpine:init', () => {
+    Alpine.store('navi', {
+        link: ['About', 'Bio'],
+        text: 'Student',
+    });
+});
